@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modes.css">
+    <title>Integral Site</title>
+</head>
+
+<body class="">
+    <!-- <div class="container"></div> -->
+    <header>
+        <div class="logo-header normal-text">
+            <img class="logo" src="image/OIG4.P8HQHsyo.png" alt="">
+            <p>Calculo Integral</p>
+        </div>
+        <div class="options-header normal-text size-medium">
+            <a href="#section-features" class="textblack">
+                <div>Caracteristicas</div>
+            </a>
+            <a href="#section-works" class="textblack">
+                <div>¿Como funciona?</div>
+            </a>
+            <a href="#section-FAQ" class="textblack">
+                <div>FAQs</div>
+            </a>
+            <a href="#section-main" class="textblack">
+                <div class="background-purple textwhite">Empieza ahora</div>
+            </a>
+            <a href="#section-footer" class="textblack">
+                <div class="background-salmon textwhite">Repositorio</div>
+            </a>
+        </div>
+    </header>
+    <section class="hero-section">
+        <!-- <div>
+            <p class="normal-text"><a href="">Registrate</a> - <a href="">Ingresa</a></p>
+        </div> -->
+        <div class="left-side-hero">
+            <div class="switch-container">
+                <input type="checkbox" id="switch" id="mode-icon" class="switch-input">
+                <label for="switch" class="switch-label"></label>
+            </div>
+            <h1 class="title extra-big">Calculo de Integrales Definidas</h1>
+            <div class="text-50-width normal-text">
+                <p>Descubre el poder del cálculo integral, una rama
+                    fascinante de las matemáticas que tiene aplicaciones en una amplia variedad de campos, desde la
+                    física
+                    hasta
+                    la economía, nuestro objetivo es ofrecerte todo lo que necesitas para dominar este
+                    tema.</p>
+                <p>Así que, ¿estás listo/a para descubrir el poder del cálculo integral? ¡Únete a nosotros hoy y
+                    comienza
+                    tu
+                    viaje hacia el dominio de este fascinante tema!</p>
+            </div>
+            <div class="container-buttons-hero">
+                <a href="#section-main">
+                    <div class="background-purple normal-text size-medium textwhite button-hero">¡Pruebalo ahora!</div>
+                </a>
+                <!-- <a href="#section-works">
+                <div class="background-blue normal-text size-medium textwhite">Conoce más</div>
+            </a> -->
+            </div>
+        </div>
+        <div class="right-side-hero">
+            <img src="image/undraw_programming_re_kg9v.svg" alt="">
+        </div>
+    </section>
+    <section class="works" id="section-works">
+        <p class="title just-big text-align-center">¿Como funciona?</p>
+        <p class=" normal-text text-align-center">Nuestro sitio web está diseñado para ayudarte a resolver problemas de
+            ventas que fluctúan con el tiempo, utilizando el poder del cálculo integral.
+        </p>
+        <p class=" normal-text text-align-center">Aquí te explicamos cómo funciona:</p>
+        <div class="box-container">
+            <div class="box-step">
+                <p class=" title">Paso 1</p>
+                <p class="normal-text text-boxs-size">Para comenzar, necesitarás ingresar los datos requeridos para
+                    realizar
+                    el cálculo,
+                    incluye la cantidad de unidades del producto vendidas hasta el momento, el tiempo en días
+                    transcurrido desde
+                    el inicio de las ventas, y la tasa de disminución de unidades por día.
+                </p>
+            </div>
+            <div class="box-step">
+                <p class="title">Paso 2</p>
+                <p class="normal-text text-boxs-size">A continuación, deberás especificar el número de días que deseas
+                    calcular como límite para la predicción de ventas, esto establecerá los límites de tiempo que se
+                    emplearán en el cálculo del período de días.
+                </p>
+            </div>
+            <div class="box-step">
+                <p class="title">Paso 3</p>
+                <p class="normal-text text-boxs-size">Una vez que hayas ingresado todos los datos necesarios, el sitio
+                    implementará la ecuación propuesta en la solución 2 dentro del algoritmo para calcular la predicción
+                    de ventas; esta ecuación se basa en el uso de integrales definidas, como podras apreciar en la
+                    imagen.
+                </p>
+            </div>
+            <div class="box-step">
+                <p class="title">Paso 4</p>
+                <p class="normal-text text-boxs-size">Pulsa calcular, nuestro algoritmo considera un modelo de ventas
+                    que no es constante,
+                    sino que fluctúa con el tiempo, suponemos que la tasa de ventas disminuye linealmente con el tiempo
+                    después del lanzamiento del producto, debido a la disminución del interés o algún cambio en
+                    el mercado.
+                </p>
+            </div>
+        </div>
+    </section>
+    <main id="section-main">
+        <div class="left-side-section-main">
+            <h2 class="title just-big textwhite">Ingresa los datos</h2>
+            <p class="textwhite normal-text">Una vez que hayas ingresado los datos, nuestra herramienta utilizará un
+                modelo de ventas que asume que la tasa de ventas disminuye linealmente con el tiempo después del
+                lanzamiento oficial del producto.</p>
+            <p class="textwhite normal-text">Este modelo se basa en la ecuación que observas en el recuadro.
+                Por favor, ten en cuenta que este modelo asume que las ventas fluctúan con el tiempo y pueden verse
+                afectadas por factores como la disminución del interés o cambios en el mercado.</p>
+            <!-- <p class="textwhite normal-text">Esperamos que encuentres útil esta herramienta</p> -->
+            <form action="">
+                <!-- <input type="text" id="cantidadUnidades" >
+                <input type="text" id="tiempoDias" placeholder="Tiempo en días transcurrido">
+                <input type="text" id="tasaDisminucion" >
+                <input type="text" id="diasCalculo" >
+                <button type="button" onclick="calcular()">Calcular</button> -->
+
+                <label for="a">Valor de a:</label><br>
+                <input type="number" id="a" name="a" placeholder="Cantidad de unidades vendidas"><br><br>
+                <label for="b">Valor de b:</label><br>
+                <input type="number" id="b" name="b" placeholder="Tasa de disminución por día"><br><br>
+                <label for="m">Valor de m:</label><br>
+                <input type="number" id="m" name="m" placeholder="0"><br><br>
+                <label for="n">Valor de n:</label><br>
+                <input type="number" id="n" name="n" placeholder="Número de días para calcular"><br><br>
+                <button type="button" onclick="calcular()">Calcular</button>
+            </form>
+        </div>
+        <div class="right-side-section-main">
+            <div id="respuestas">
+                <p class="textwhite normal-text">Gracias por proporcionar toda la información necesaria. Aquí están los
+                    resultados de la predicción de ventas para el período de tiempo que especificaste:</p>
+                <div class="container-cards">
+                    <div class="card">
+                        <p id="unidadesVendidas" class="title"></p>
+                        <p class="normal-text">Unidades Vendidas</p>
+                    </div>
+                    <div class="card">
+                        <p id="disminucionUnidades" class="title"></p>
+                        <p class="normal-text">Unidades de tasa de disminución por día</p>
+                    </div>
+                    <div class="card">
+                        <p id="dias" class="title"></p>
+                        <p class="normal-text">Días para calcular</p>
+                    </div>
+                    <div class="card-result">
+                        <p id="resultado" class="title"></p>
+                        <p class="normal-text">Unidades se venderan, aproximadamente</p>
+                    </div>
+                </div>
+                <div class="results normal-text text-align-center">Si la tasa de ventas disminuye linealmente con el
+                    tiempo a una tasa de
+                    <span id="disminucionUnidades2" class="title"></span>
+                    unidades por día, y la tasa de ventas inicial es de <span id="unidadesVendidas2"
+                        class="title"></span>
+                    unidades por día, la compañía
+                    venderá aproximadamente <span id="resultado2" class="title"></span> unidades en los siguientes <span
+                        id="dias2" class="title"></span> dias.
+                </div>
+                <p class="textwhite normal-text"> Por favor, ten en cuenta que estos resultados son estimaciones basadas
+                    en
+                    el modelo de disminución
+                    lineal de ventas y los datos que proporcionaste. Las ventas reales pueden variar debido a una serie
+                    de
+                    factores, incluyendo cambios en el mercado y el interés del consumidor.</p>
+            </div>
+            <div class="box-ecuacion">
+                <p class="normal-text">Esta es la ecuacion en la que nuestro algoritmo se basa para realizar los
+                    calculos:</p>
+                <img src="image/ecuacion.png" alt="ecuacion">
+            </div>
+        </div>
+    </main>
+    <section class="features" id="section-features">
+        <p class="title just-big">Caracteristicas y proximas implementaciones</p>
+        <p class="text-70-width normal-text text-align-center">Estamos comprometidos con la mejora continua de nuestra
+            plataforma y estamos emocionados de compartir algunas de las próximas implementaciones que están en
+            desarrollo:</p>
+        <div class="scroll">
+            <div class="scroll-slide">
+                <div class="normal-text background-blue">Diseño Responsive</div>
+                <div class="normal-text background-blue">Modo oscuro</div>
+                <div class="normal-text background-blue">Integraciones de terceros "APIs u Bibliotecas"</div>
+                <div class="normal-text background-blue">Herramientas de Analisis</div>
+                <div class="normal-text background-blue">Algoritmos de predicción mejorados</div>
+                <div class="normal-text background-blue">Descargas de resultados en diferentes formatos</div>
+                <div class="normal-text background-blue">Optimizacion y complejidad de calculos</div>
+            </div>
+        </div>
+    </section>
+    <section class="FAQ" id="section-FAQ">
+        <p class="title just-big">FAQs: Preguntas comunes respondidas</p>
+        <p class="normal-text text-70-width">
+            Bienvenido/a a nuestra sección de Preguntas Frecuentes (FAQ). Aquí encontrarás respuestas a algunas de las
+            preguntas más comunes que puedas tener sobre nuestro servicio, recuerda nuestro objetivo es
+            proporcionarte la información que necesitas de manera clara y concisa para que puedas tomar decisiones
+            informadas.</p>
+        <div class="bento">
+            <div class="box-question">
+                <p class="title">¿Por que hay un cero bloqueado?</p>
+                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
+                    inventore provident
+                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
+                    perspiciatis, accusamus maxime ullam fuga!</p>
+            </div>
+            <div class="box-question">
+                <p class="title">¿Que significa el resultado?</p>
+                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
+                    inventore provident
+                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
+                    perspiciatis, accusamus maxime ullam fuga!</p>
+            </div>
+            <div class="box-question">
+                <p class="title">¿Como se realiza el calculo?</p>
+                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
+                    inventore provident
+                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
+                    perspiciatis, accusamus maxime ullam fuga!</p>
+            </div>
+            <div class="box-question">
+                <p class="title">¿Mis datos son recopilados?</p>
+                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
+                    inventore provident
+                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
+                    perspiciatis, accusamus maxime ullam fuga!</p>
+            </div>
+            <div class="box-question">
+                <p class="title">¿Como puedo aportar al desarrollo del sitio?</p>
+                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
+                    inventore provident
+                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
+                    perspiciatis, accusamus maxime ullam fuga!</p>
+            </div>
+            <div class="box-question">
+                <p class="title">Comparte nuestro sitio:</p>
+                <div>
+                    <img src="" alt="Codigo QR">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="section-footer">
+        <a href="#">
+            <div class="background-gray title textblack text-align-center">Volver al inicio</div>
+        </a>
+        <p class="textgray normal-text">Hecho por: Santiago Villamil</p>
+        <p class="textgray normal-text">2024</p>
+    </footer>
+    <script src="functionality.js"></script>
+</body>
+
+</html>

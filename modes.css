@@ -1,0 +1,74 @@
+:root {
+    --background: #ECF2FF;
+    --purple-principal: #6266F5;
+    --celeste: #67D7E7;
+    --salmon: #FF5A82;
+    --blue: #4A85FA;
+
+    --light-gray: #F0F0F0;
+    --minus-black: #050505;
+
+    --dark-mode-light: #353966;
+    --dark-mode-dark: #272B4E;
+}
+
+body.darkmode{
+    background-color: var(--dark-mode-dark);
+    color: #FFFFFF;
+}
+
+.darkmode header{
+    background-color: var(--dark-mode-light);
+    border-color: var(--dark-mode-light);
+}
+
+.darkmode header a{
+    color: white;
+}
+.darkmode .box-step{
+    background-color: var(--dark-mode-light);
+    box-shadow: 0 0 10px rgba(98, 102, 245, 0);
+}
+
+.darkmode main{
+    box-shadow: 0 0 10px rgba(98, 102, 245, 0);
+}
+
+.darkmode form{
+    background-color: var(--dark-mode-light);
+}
+
+.darkmode .scroll{
+    background-color: var(--dark-mode-dark);
+}
+
+.darkmode .scroll::before{
+    left: 0;
+    background: linear-gradient(to left,rgba(255,255,255,0), var(--dark-mode-dark));
+}
+
+.darkmode footer{
+    background-color: var(--dark-mode-light);
+}
+
+.darkmode footer a div{
+    background-color: var(--dark-mode-dark);
+    color: white;
+}
+
+.darkmode .background-blue{
+    background-color: var(--dark-mode-light);
+}
+
+.darkmode .results{
+    background-color: var(--dark-mode-light);
+    /* color: black; */
+}
+
+.darkmode .card{
+    background-color: var(--dark-mode-light);
+}
+
+.darkmode .card-result{
+    background-color: var(--dark-mode-light);
+}
