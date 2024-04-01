@@ -95,7 +95,7 @@ function calcular() {
 
     document.getElementById('a').value = '';
     document.getElementById('b').value = '';
-    document.getElementById('m').value = '';
+    // document.getElementById('m').value = '';
     document.getElementById('n').value = '';
 
     a.focus();

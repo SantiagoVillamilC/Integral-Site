@@ -129,14 +129,14 @@
                 <input type="text" id="diasCalculo" >
                 <button type="button" onclick="calcular()">Calcular</button> -->
 
-                <label for="a">Valor de a:</label><br>
-                <input type="number" id="a" name="a" placeholder="Cantidad de unidades vendidas"><br><br>
-                <label for="b">Valor de b:</label><br>
-                <input type="number" id="b" name="b" placeholder="Tasa de disminución por día"><br><br>
-                <label for="m">Valor de m:</label><br>
-                <input type="number" id="m" name="m" placeholder="0"><br><br>
-                <label for="n">Valor de n:</label><br>
-                <input type="number" id="n" name="n" placeholder="Número de días para calcular"><br><br>
+                <label for="a">Cantidad de unidades vendidas:</label><br>
+                <input type="number" id="a" name="a" placeholder="Este sera el valor de a"><br><br>
+                <label for="b">Tasa de disminución por día:</label><br>
+                <input type="number" id="b" name="b" placeholder="Este sera el valor de b"><br><br>
+                <label for="m">Primer dia - Valor de m - No modificable:</label><br>
+                <input type="number" id="m" name="m" placeholder="0" value="0" readonly><br><br>
+                <label for="n">Número de días para calcular:</label><br>
+                <input type="number" id="n" name="n" placeholder="Este sera el valor de n"><br><br>
                 <button type="button" onclick="calcular()">Calcular</button>
             </form>
         </div>
@@ -212,43 +212,47 @@
         <div class="bento">
             <div class="box-question">
                 <p class="title">¿Por que hay un cero bloqueado?</p>
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
-                    inventore provident
-                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
-                    perspiciatis, accusamus maxime ullam fuga!</p>
+                <p class="normal-text">El cálculo siempre comienza desde
+                    el primer día de las ventas asi que en nuestra ecuación, la "m" siempre será cero; esto
+                    significa que estamos considerando todo el período de ventas desde el inicio hasta el día "n" que
+                    especificas para la predicción.</p>
             </div>
             <div class="box-question">
                 <p class="title">¿Que significa el resultado?</p>
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
-                    inventore provident
-                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
-                    perspiciatis, accusamus maxime ullam fuga!</p>
+                <p class="normal-text">Dicho número representa la cantidad total de unidades del producto que se espera
+                    vender durante el período de tiempo que especificaste, este se calcula utilizando el modelo de
+                    disminución lineal de ventas y los datos que proporcionaste.</p>
             </div>
             <div class="box-question">
+                <p class="title">¿Como puedo aportar al desarrollo del sitio?</p>
+                <p class="normal-text">Nuestro sitio es de código abierto, lo que significa que cualquier persona puede
+                    ver, usar y contribuir al código que hace funcionar el sitio. 
+                    Si estás interesado/a en contribuir, puedes visitar nuestro repositorio en GitHub; allí podrás ver
+                    todo el código, hacer sugerencias, reportar problemas e incluso puedes
+                    hacer tus propias modificaciones al código y proponerlas.</p>
+            </div>
+            <div class="box-question-extent">
                 <p class="title">¿Como se realiza el calculo?</p>
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
-                    inventore provident
-                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
-                    perspiciatis, accusamus maxime ullam fuga!</p>
+                <p class="normal-text"> En términos sencillos, el cálculo se realiza de la siguiente manera:
+                    Tomamos los datos que nos das como las unidades vendidas hasta ahora, cuántos días han pasado desde
+                    que
+                    comenzaron las ventas, y cómo están disminuyendo las ventas cada día, luego
+                    usamos estos datos en una fórmula matemática llamada “integral definida” para estimar cuántas
+                    unidades se venderán en el futuro, obteniendo asi
+                    el resultado es una predicción de cuántas unidades del producto se venderán en el número de días que
+                    especificaste.</p>
             </div>
-            <div class="box-question">
+            <!-- <div class="box-question">
                 <p class="title">¿Mis datos son recopilados?</p>
                 <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
                     inventore provident
                     distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
                     perspiciatis, accusamus maxime ullam fuga!</p>
-            </div>
-            <div class="box-question">
-                <p class="title">¿Como puedo aportar al desarrollo del sitio?</p>
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, adipisci
-                    inventore provident
-                    distinctio perferendis sint rerum soluta optio accusamus aperiam saepe ab! Labore nulla repudiandae
-                    perspiciatis, accusamus maxime ullam fuga!</p>
-            </div>
+            </div> -->
             <div class="box-question">
                 <p class="title">Comparte nuestro sitio:</p>
-                <div>
-                    <img src="" alt="Codigo QR">
+                <div class="code">
+                    <img src="image/code.svg" alt="Codigo QR">
                 </div>
             </div>
         </div>

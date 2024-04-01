@@ -307,6 +307,10 @@ main{
     grid-column: auto/span 3;
     grid-row: auto/span 2;
 }
+.box-question-extent{
+    grid-column: auto/span 6;
+    grid-row: auto/span 2;
+}
 .box-question .normal-text{
     margin-left: 1vw;
 }
@@ -500,3 +504,11 @@ form {
     display: none;
     transition: 1s;
   }
+.code{
+    background-color: var(--purple-principal);
+    margin-left: 2rem;
+    width: min-content;
+}
+.code img{
+    height: 7rem;
+}
