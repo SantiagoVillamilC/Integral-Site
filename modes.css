@@ -195,6 +195,17 @@ body.darkmode {
         padding: 1rem;
         border-radius: 8px;
     }
+    .features{
+        text-align: center;
+        margin-top: 2vh;
+    }
+    .features .text-70-width{
+        width: 90vw;
+    }
+    .scroll::before,
+    .scroll-slide::after {
+        width: 150px;
+    }
 }
 
 /* Media query para pantallas pequeñas, como celulares */
