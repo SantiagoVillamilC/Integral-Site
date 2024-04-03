@@ -518,7 +518,7 @@ button:active {
     justify-content: center;
     text-align: center;
     padding: 1rem;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .card p {
